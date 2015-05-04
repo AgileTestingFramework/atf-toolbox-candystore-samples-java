@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- Used for drive data into test cases -->
+<test-data-root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.agiletestingframework.com/schema/test-data.xsd">
+	<testcase name="Test Case: Add 2 Numbers">
+		<scenario name="Scenario: Should be positive">
+			<firstNumber>10</firstNumber>
+			<secondNumber>100</secondNumber>
+			<expectedSum>110</expectedSum>
+		</scenario>
+
+		<scenario name="Scenario: Should be negative">
+			<firstNumber>10</firstNumber>
+			<secondNumber>-100</secondNumber>
+			<expectedSum>-90</expectedSum>
+		</scenario>
+	</testcase>
+	<testcase name="Test Case: Multiply 2 Numbers">
+		<scenario name="Scenario: Should be positive">
+			<firstNumber>10</firstNumber>
+			<secondNumber>20</secondNumber>
+			<expectedProduct>200</expectedProduct>
+		</scenario>
+
+		<scenario name="Scenario: Should be negative">
+			<firstNumber>10</firstNumber>
+			<secondNumber>-20</secondNumber>
+			<expectedProduct>-200</expectedProduct>
+		</scenario>
+	</testcase>
+</test-data-root>

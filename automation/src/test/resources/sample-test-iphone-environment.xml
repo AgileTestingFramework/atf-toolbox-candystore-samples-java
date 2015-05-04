@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- sample-test-environment.xml -->
+<!-- Used for configuration of test environment -->
+<sample-test-environment>
+	<ATF>
+		<Web>
+			<base-url>http://store.agiletestingframework.com:8080/candystore/
+			</base-url>
+			<browser-name>firefox</browser-name>
+			<browser-version>31.0</browser-version>
+			<browser-platform></browser-platform>
+			<browser-download-path>C:\Program Files (x86)\Mozilla Firefox\
+			</browser-download-path>
+			<browser-download-prefix></browser-download-prefix>
+			<use-grid>false</use-grid>
+			<grid-url>http://localhost:4443/wd/hub</grid-url>
+			<application-context></application-context>
+			<driver-path></driver-path>
+			<use-html-unit-driver></use-html-unit-driver>
+			<enable-javascript></enable-javascript>
+			<extension-pathnames></extension-pathnames>
+		</Web>
+
+		<Reporting>
+			<!-- report file locations, switches to turn different reporting on\off -->
+
+		</Reporting>
+
+		<Localization>
+			<locale>en-US</locale>
+			<resource-path>src/test/resources</resource-path>
+		</Localization>
+
+		<Database>
+			<!-- datasource -->
+			<db-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</db-driver>
+			<db-user>atfuser</db-user>
+			<db-password>atfpassword</db-password>
+			<db-url>jdbc:sqlserver://instance:port</db-url>
+		</Database>
+
+		<Mobile>
+			<Common>
+				<appium-version>1.3.6</appium-version>
+				<appium-start-node-server>false</appium-start-node-server>
+				<appium-node-server-commandline>cmd</appium-node-server-commandline>
+				<appium-node-server-arguments>/c,
+					C:/Progra~2/appium/Appium/Node.exe,
+					C:/Progra~2/appium/Appium/node_modules/appium/bin/appium.js,
+					--full-reset
+				</appium-node-server-arguments>
+				<!--<grid-url>http://127.0.0.1:4723/wd/hub</grid-url> -->
+				<grid-url>http://stephen-rufle-atf:b349a801-f092-40f7-8857-46d849064db3@ondemand.saucelabs.com:80/wd/hub</grid-url>
+				<platform-name>iOS</platform-name>
+				<platform-version>8.1</platform-version>
+				<device-name>iPhone Simulator</device-name>
+				<device-type>iPhone</device-type> <!-- tablet -->
+				<browser-name>safari</browser-name>
+				<new-command-line-timeout>300</new-command-line-timeout>
+			</Common>
+			<Android>
+
+			</Android>
+			<IOS>
+
+			</IOS>
+		</Mobile>
+		<Other>
+			<app-path>com/atf</app-path>
+			<image-library>
+				<windows>${resource-path}/${app-path}/image</windows>
+				<linux>${resource-path}/${app-path}/image</linux>
+				<macosx>${resource-path}/${app-path}/image</macosx>
+			</image-library>
+		</Other>
+	</ATF>
+
+</sample-test-environment>

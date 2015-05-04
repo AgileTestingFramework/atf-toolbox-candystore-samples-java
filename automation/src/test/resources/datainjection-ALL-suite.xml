@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="datainjection-ALL-suite">
+	<parameter name="zipCode" value="85260" />
+	<parameter name="globalZipCode" value="55555" />
+	<test name="All datainjection Tests in the package datainjection">
+		<groups>
+			<run>
+				<include name="datainjection" />
+			</run>
+		</groups>
+		<packages>
+			<package name="candystore.common" />
+			<package name="candystore.datainjection" />
+		</packages>
+	</test>
+</suite>

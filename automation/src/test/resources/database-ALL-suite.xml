@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="database-ALL-suite">
+	<test name="All tests in the database package">
+		<packages>
+			<package name="candystore.common" />
+			<package name="candystore.database" />
+		</packages>
+	</test>
+</suite>

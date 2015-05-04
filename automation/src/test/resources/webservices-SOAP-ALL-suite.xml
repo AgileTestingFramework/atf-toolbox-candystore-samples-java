@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="webservices-SOAP-ALL-suite">
+	<test name="All SOAP Tests in the package webservices">
+		<groups>
+			<run>
+				<include name="soap" />
+			</run>
+		</groups>
+		<packages>
+			<package name="candystore.common" />
+			<package name="candystore.webservices" />
+		</packages>
+	</test>
+</suite>
