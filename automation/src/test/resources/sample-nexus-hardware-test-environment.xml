@@ -135,6 +135,8 @@
 		<reporting>
 			<!-- report file locations, switches to turn different reporting on\off -->
 			<use-jserrorcollector-with-firefox>false</use-jserrorcollector-with-firefox>
+			<buffered-image-save-location>C:\SavedImages\</buffered-image-save-location>
+			<buffered-image-save-format>PNG</buffered-image-save-format>
 		</reporting>
 
 		<localization>
@@ -230,6 +232,6 @@
 				<macosx>${resource-path}/${app-path}/image</macosx>
 			</image-library>
 		</other>
-	</ATF>
+	</atf>
 
 </sample-test-environment>
