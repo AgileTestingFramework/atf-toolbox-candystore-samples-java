@@ -17,11 +17,6 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>atf</groupId>
-			<artifactId>toolbox</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
 			<groupId>candystore</groupId>
 			<artifactId>automation-services</artifactId>
 			<version>1.0.0</version>

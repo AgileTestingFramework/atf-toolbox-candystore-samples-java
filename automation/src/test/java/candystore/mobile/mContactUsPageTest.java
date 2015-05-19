@@ -16,6 +16,13 @@ public mContactUsPage contactUsPage;
 		contactUsPage.load();
 	}
     
+	/**
+	 * C:\Program Files (x86)\appium\Android\android-sdk\platform-tools\adb.exe devices
+	 * 
+	 * Hardware device setup
+	 * To make it visible, go to Settings > About phone and tap Build number seven times. 
+	 * Return to the previous screen to find Developer options at the bottom.
+	 */
     /**
      * the max char this textbox should accept is 25
      */

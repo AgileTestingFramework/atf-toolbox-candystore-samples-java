@@ -77,7 +77,7 @@ public class EventBudgetReport {
         
         Target imageTarget = new ImageTarget(pattern);
              
-        ScreenRegion foundRegion = ATFHandler.getInstance().getScreenImageAutomation().getFullScreen().wait(imageTarget, 50000);
+        ScreenRegion foundRegion = ATFHandler.getInstance().getScreenImageAutomation().getFullScreen().wait(imageTarget, 20000);
 
         return foundRegion;
 	}

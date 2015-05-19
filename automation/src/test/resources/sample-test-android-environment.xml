@@ -156,19 +156,28 @@
 
 		<mobile>
 			<common>
-				<appium-version>1.2.2</appium-version>
-				<appium-start-node-server>false</appium-start-node-server>
-				<appium-node-server-commandline>cmd</appium-node-server-commandline>
-				<appium-node-server-arguments></appium-node-server-arguments>
-				<!-- run on SauceLabs -->
-				<grid-url>http://stephen-rufle-atf:b349a801-f092-40f7-8857-46d849064db3@ondemand.saucelabs.com:80/wd/hub
-				</grid-url>
-				<platform-name>android</platform-name>
-				<platform-version>4.4</platform-version>
-				<device-name>android</device-name>
-				<device-type>phone</device-type> <!-- tablet -->
-				<browser-name>browser</browser-name>
-				<new-command-line-timeout>300</new-command-line-timeout>
+			    <automationName>Appium</automationName>
+				<appiumVersion>1.2.2</appiumVersion>
+				<appiumStartNodeServer>false</appiumStartNodeServer>
+				<appiumNodeServerCommandLine>cmd</appiumNodeServerCommandLine>
+				<appiumNodeServerArguments></appiumNodeServerArguments>
+				<appiumNodeServerProcessName>Node.exe</appiumNodeServerProcessName>
+				<gridUrl>http://stephen-rufle-atf:b349a801-f092-40f7-8857-46d849064db3@ondemand.saucelabs.com:80/wd/hub</gridUrl>
+				<platformName>Android</platformName>
+				<platformVersion>4.4</platformVersion>
+				<deviceName>android</deviceName>
+				<deviceType>phone</deviceType> <!-- tablet -->
+				<browserName>Browser</browserName>
+				<newCommandTimeout>300</newCommandTimeout>
+				<app></app>
+				<autoLaunch></autoLaunch>
+				<language></language>
+				<locale></locale>
+				<udid></udid>
+				<orientation></orientation>
+				<autoWebview></autoWebview>
+				<noReset></noReset>
+				<fullReset></fullReset>
 			</common>
 			<android>
 				<appActivity></appActivity>
@@ -234,4 +243,4 @@
 		</other>
 	</atf>
 
-</sample-test-environment>
+</sample-test-android-environment>
