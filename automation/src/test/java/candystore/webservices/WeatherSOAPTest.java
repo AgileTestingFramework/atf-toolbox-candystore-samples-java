@@ -3,7 +3,6 @@ package candystore.webservices;
 import static org.fest.assertions.api.Assertions.assertThat;
 
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import candystore.webservices.schemas.com.cdyne.ws.weatherws.ForecastReturn;

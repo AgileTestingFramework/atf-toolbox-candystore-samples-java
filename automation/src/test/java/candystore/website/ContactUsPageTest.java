@@ -14,7 +14,7 @@ public class ContactUsPageTest {
 	@BeforeMethod(alwaysRun=true)
 	public void BeforeMethodSetup()
 	{
-		contactUsPage = CandyStorePageFactory.getInstance().getContactUsPage();
+		contactUsPage = (ContactUsPage)CandyStorePageFactory.getInstance(CandyStorePageFactory.CONTACTUS);
 		contactUsPage.load();
 	}
 

@@ -1,9 +1,9 @@
 package candystore.webservices;
 
+import static com.jayway.restassured.RestAssured.get;
+import static com.jayway.restassured.RestAssured.given;
 import static org.fest.assertions.api.Assertions.assertThat;
-import static com.jayway.restassured.RestAssured.*;
-import static com.jayway.restassured.matcher.RestAssuredMatchers.*;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.equalTo;
 
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
@@ -54,10 +54,9 @@ public class WeatherRESTTest {
 		String expectedCity = "Scottsdale";
 		
 		String response = get(getCityForecastByZIP).asString();
-		XmlPath path = new XmlPath(response).setRoot("ForecastResult");
 		
-		assertThat(path.from(response).get("ForecastReturn.City").toString()).isEqualTo(expectedCity);
-		assertThat(path.from(response).get("ForecastReturn.State").toString()).isEqualTo(expectedState);
+		assertThat(XmlPath.from(response).get("ForecastReturn.City").toString()).isEqualTo(expectedCity);
+		assertThat(XmlPath.from(response).get("ForecastReturn.State").toString()).isEqualTo(expectedState);
 	}
 	
 	@Test

@@ -58,6 +58,7 @@ public class SchemaValidation {
 			// Loop on specifc column within the row
 		    for (Map.Entry<String, Object> column : row.entrySet()) {
 		    	// Assert something here
+		    	System.out.println(column.getKey().toString());
 		    }
 		    
 		    // look at a specific column within the row

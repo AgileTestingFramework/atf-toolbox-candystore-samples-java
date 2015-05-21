@@ -13,8 +13,8 @@ public class ContactUsPage extends LoadableComponent<ContactUsPage>{
 	@Override
 	public void load() {
 		// Nested Page Navigation, load the parent
-		CandyStorePageFactory.getInstance().getIndexPage().load();
-		CandyStorePageFactory.getInstance().getIndexPage().clickContactUsLink();
+		((IndexPage)CandyStorePageFactory.getInstance(CandyStorePageFactory.INDEX)).load();
+		((IndexPage)CandyStorePageFactory.getInstance(CandyStorePageFactory.INDEX)).clickContactUsLink();
 		isLoaded();		
 	}
 

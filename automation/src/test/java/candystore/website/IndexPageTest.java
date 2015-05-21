@@ -14,7 +14,7 @@ public class IndexPageTest {
 	@BeforeMethod(alwaysRun=true)
 	public void BeforeMethodSetup()
 	{
-		indexPage = CandyStorePageFactory.getInstance().getIndexPage();
+		indexPage = (IndexPage)CandyStorePageFactory.getInstance(CandyStorePageFactory.INDEX);
 		indexPage.load();
 	}
 	

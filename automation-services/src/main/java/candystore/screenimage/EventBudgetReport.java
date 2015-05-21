@@ -1,21 +1,15 @@
 package candystore.screenimage;
 
 import java.awt.Desktop;
-import java.awt.Rectangle;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
 import org.sikuli.api.ImageTarget;
 import org.sikuli.api.Relative;
-import org.sikuli.api.ScreenLocation;
 import org.sikuli.api.ScreenRegion;
 import org.sikuli.api.Target;
 import org.sikuli.api.robot.Mouse;
 import org.sikuli.api.robot.desktop.DesktopMouse;
-import java.io.*;
-import java.awt.image.*;
-import javax.imageio.*;
 
 import atf.toolbox.ATFHandler;
 
