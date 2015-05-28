@@ -4,6 +4,6 @@
 <configuration>
     <system />
     <!-- <xml fileName="sample-test-android-environment.xml"/> -->
-    <xml fileName="sample-test-iphone-environment.xml"/>
-    <!--<xml fileName="sample-nexus-hardware-test-environment.xml" /> -->
+    <!-- <xml fileName="sample-test-iphone-environment.xml"/> -->
+    <xml fileName="sample-nexus-hardware-test-environment.xml" />
 </configuration>

@@ -32,8 +32,6 @@ public class WeatherRESTTest {
 	public URL getCityForecastByZIP;
 	public URL getCityForecastByZIP2;
 	public URL getCityByPostalCode;
-	public URL orderCandyURL;
-	public URL getOrderCandyURL;
 	
 	@BeforeClass(alwaysRun=true)
 	public void BeforeClassSetup() throws MalformedURLException, URISyntaxException
@@ -42,9 +40,6 @@ public class WeatherRESTTest {
 		getCityForecastByZIP = new URL("http://wsf.cdyne.com/WeatherWS/Weather.asmx/GetCityForecastByZIP?ZIP=85260");
 		getCityForecastByZIP2 = new URL("http://wsf.cdyne.com/WeatherWS/Weather.asmx/GetCityForecastByZIP");
 		getCityByPostalCode = new URL("http://api.geonames.org/postalCodeLookupJSON");
-		
-		orderCandyURL = new URL("http://192.168.1.111:8080/CandyStore-0.0.3/candyorderREST/orderCandy");
-		getOrderCandyURL = new URL("http://192.168.1.111:8080/CandyStore-0.0.3/candyorderREST/getOrder");
 	}
 	
 	@Test
@@ -70,42 +65,5 @@ public class WeatherRESTTest {
 			when().post(getCityForecastByZIP2).
 			then().body("ForecastReturn.City", equalTo(expectedCity)).
 			and().body("ForecastReturn.State", equalTo(expectedState));
-	}
-	
-	@Test
-	public void shouldOrderCandy() {
-		// JSON POST Example
-		float expectedOrderTotal = 1.8f;
-		int expectedSuccessCode = 200;
-		Object[] expectedCandyNames = new String[] {"Twix", "Milky Way"};
-		String unexpectedCandyNames = "Sour";
-		
-		OrderCandyJSONService jSONService = new OrderCandyJSONService();
-		
-		Map<String, Integer> orderLines = new HashMap<String, Integer>();
-		orderLines.put("000000001", 1);
-		orderLines.put("000000002", 2);
-		
-		String request = jSONService.buildOrderCandyRequest(orderLines);
-		
-		Response response = given().body(request).when().post(orderCandyURL).thenReturn();
-		assertThat(response.getStatusCode()).isEqualTo(expectedSuccessCode);
-		assertThat(response.jsonPath().getFloat("orderTotal")).isEqualTo(expectedOrderTotal);
-		assertThat(response.jsonPath().getList("orderLines.candy.candyName")).contains(expectedCandyNames).doesNotContain(unexpectedCandyNames);
-	}
-	
-	@Test
-	public void shouldGetOrder() throws MalformedURLException {
-		// JSON GET Example
-		int expectedSuccessCode = 200;
-		int orderId = 167;
-		float expectedOrderTotal = 1.8f;
-		
-		URL extendedGetORderCandyURL = new URL(getOrderCandyURL.toString()+"/"+orderId);
-		
-		Response response = get(extendedGetORderCandyURL).thenReturn();
-		
-		assertThat(response.getStatusCode()).isEqualTo(expectedSuccessCode);
-		assertThat(response.jsonPath().getFloat("orderTotal")).isEqualTo(expectedOrderTotal);
 	}
 }
