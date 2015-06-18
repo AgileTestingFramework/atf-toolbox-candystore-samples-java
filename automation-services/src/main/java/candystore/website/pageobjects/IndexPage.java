@@ -30,7 +30,7 @@ public class IndexPage extends LoadableComponent<IndexPage>{
     @FindBy(className = "clear")
     private List<WebElement> clears;
     
-    @FindBy(linkText = "Contact")
+    @FindBy(linkText = "Contact Us")
     private WebElement contactUsLink;
 	
     @FindBy(partialLinkText = "Second")

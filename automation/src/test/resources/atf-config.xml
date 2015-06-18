@@ -3,7 +3,9 @@
 <!-- Used for configuration of test environment -->
 <configuration>
     <system />
+    <!--  Change the fileName below to use a different configuration environment, android and iphone are configured to use sauce labs -->
     <!-- <xml fileName="sample-test-android-environment.xml"/> -->
     <!-- <xml fileName="sample-test-iphone-environment.xml"/> -->
-    <xml fileName="sample-nexus-hardware-test-environment.xml" />
+    <!-- <xml fileName="sample-nexus-hardware-test-environment.xml" />  -->
+    <xml fileName="sample-test-environment.xml" />
 </configuration>
