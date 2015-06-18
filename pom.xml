@@ -5,7 +5,7 @@
 
 	<groupId>atf</groupId>
 	<artifactId>candystore-samples</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>pom</packaging>
 
 	<name>atf-candystore-samples</name>
@@ -19,7 +19,7 @@
 		<dependency>
 			<groupId>atf</groupId>
 			<artifactId>toolbox</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1</version>
 		</dependency>
 	</dependencies>
 	<modules>

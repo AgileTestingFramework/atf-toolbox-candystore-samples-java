@@ -9,7 +9,6 @@ import java.lang.reflect.Method;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -35,7 +34,7 @@ public class ContactUsPageTest {
 	public void takeScreenShotOnFailure(ITestResult testResult, Method method) throws IOException { 
 		if (testResult.getStatus() == ITestResult.FAILURE) { 
 			File scrFile = ((TakesScreenshot)ATFHandler.getInstance().getWebAutomation().getWebDriver()).getScreenshotAs(OutputType.FILE); 
-			FileUtils.copyFile(scrFile, new File(ConfigurationManager.getInstance().getBufferedImageSaveLocation()+"\\"+method.getName()+".jpg")); 
+			FileUtils.copyFile(scrFile, new File(ConfigurationManager.getInstance().getTakesScreenshotSaveLocation()+"\\"+method.getName()+".jpg")); 
 		}		
 	}
 	

@@ -23,11 +23,11 @@ public class CandyOrderRESTTest {
 	@BeforeClass(alwaysRun=true)
 	public void BeforeClassSetup() throws MalformedURLException, URISyntaxException
 	{
-		orderCandyURL = new URL("http://192.168.1.111:8080/CandyStore-0.0.3/candyorderREST/orderCandy");
-		getOrderCandyURL = new URL("http://192.168.1.111:8080/CandyStore-0.0.3/candyorderREST/getOrder");
+		orderCandyURL = new URL("http://54.173.199.137:8080/CandyStore-0.0.3/candyorderREST/orderCandy");
+		getOrderCandyURL = new URL("http://54.173.199.137:8080/CandyStore-0.0.3/candyorderREST/getOrder");
 	}
 	
-	@Test
+	@Test(groups="rest")
 	public void shouldOrderCandy() {
 		// JSON POST Example
 		float expectedOrderTotal = 1.8f;
@@ -49,11 +49,11 @@ public class CandyOrderRESTTest {
 		assertThat(response.jsonPath().getList("orderLines.candy.candyName")).contains(expectedCandyNames).doesNotContain(unexpectedCandyNames);
 	}
 	
-	@Test
+	@Test(groups="rest")
 	public void shouldGetOrder() throws MalformedURLException {
 		// JSON GET Example
 		int expectedSuccessCode = 200;
-		int orderId = 167;
+		int orderId = 1;
 		float expectedOrderTotal = 1.8f;
 		
 		URL extendedGetORderCandyURL = new URL(getOrderCandyURL.toString()+"/"+orderId);

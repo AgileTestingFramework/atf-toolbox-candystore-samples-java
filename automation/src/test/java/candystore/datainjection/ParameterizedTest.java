@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 public class ParameterizedTest {
 
     /**
+     * RUN THIS TEST using the datainjection-MASTER-suite.xml file !!!
+     * 
      * Validate the global Zip Code is overridden
      * Validate the zipCode is as expected
      * Validate that the global string comes in from the master suite

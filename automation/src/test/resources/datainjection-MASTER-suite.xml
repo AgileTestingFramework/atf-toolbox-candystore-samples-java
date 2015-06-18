@@ -3,6 +3,6 @@
     <parameter name="global" value="This is a global value"/>
     <parameter name="globalZipCode" value="85123" />
     <suite-files>
-        <suite-file path="candystore.datainjection-ALL-suite.xml"></suite-file>
+        <suite-file path="datainjection-ALL-suite.xml"></suite-file>
     </suite-files>
 </suite>

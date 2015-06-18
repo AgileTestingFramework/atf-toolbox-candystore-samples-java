@@ -30,14 +30,14 @@ public class CalculatorTest
 	public static Object[][] additionData()
 	{
 		String testCaseName = "Test Case: Add 2 Numbers";
-		return atfTestDataProvider.Initialize(new XMLDataDriver(testDataFilename, testCaseName));
+		return atfTestDataProvider.initialize(new XMLDataDriver(testDataFilename, testCaseName));
 	}
 
 	@DataProvider(name = "MultipleTwoNumbers")
 	public static Object[][] multiplicationData()
 	{
 		String testCaseName = "Test Case: Multiply 2 Numbers";
-		return atfTestDataProvider.Initialize(new XMLDataDriver(testDataFilename, testCaseName));
+		return atfTestDataProvider.initialize(new XMLDataDriver(testDataFilename, testCaseName));
 	}
 
 	@Test(dataProvider = "AddTwoNumbers", groups = { "datainjection" })

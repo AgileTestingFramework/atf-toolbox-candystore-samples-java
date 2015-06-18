@@ -8,14 +8,11 @@ import static org.hamcrest.Matchers.equalTo;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.jayway.restassured.path.xml.XmlPath;
-import com.jayway.restassured.response.Response;
 
 
 /**
@@ -42,7 +39,7 @@ public class WeatherRESTTest {
 		getCityByPostalCode = new URL("http://api.geonames.org/postalCodeLookupJSON");
 	}
 	
-	@Test
+	@Test(groups="rest")
 	public void shouldCityForecastByZipBeScottsdale() {
 		// HTTP GET Example
 		String expectedState = "AZ";
@@ -54,7 +51,7 @@ public class WeatherRESTTest {
 		assertThat(XmlPath.from(response).get("ForecastReturn.State").toString()).isEqualTo(expectedState);
 	}
 	
-	@Test
+	@Test(groups="rest")
 	public void shouldCityForecastByZipBeScottsdale2() {
 		// HTTP POST Example using a more fluent assertion
 		String expectedState = "AZ";

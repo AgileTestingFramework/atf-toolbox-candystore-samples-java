@@ -138,6 +138,7 @@
 			<buffered-image-save-location>C:\SavedImages\
 			</buffered-image-save-location>
 			<buffered-image-save-format>PNG</buffered-image-save-format>
+			<takes-screenshot-save-location>C:\SavedImages\</takes-screenshot-save-location>
 		</reporting>
 
 		<localization>
