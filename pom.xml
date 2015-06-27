@@ -17,14 +17,26 @@
 	</properties>
 	<dependencies>
 		<dependency>
+			<groupId>com.lazerycode.jmeter</groupId>
+			<artifactId>jmeter-maven-plugin</artifactId>
+			<version>1.10.1</version>
+		</dependency>
+		<dependency>
 			<groupId>atf</groupId>
 			<artifactId>toolbox</artifactId>
 			<version>1.0.1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-assembly-plugin</artifactId>
+			<version>2.5.5</version>
+			<type>maven-plugin</type>
+		</dependency>
 	</dependencies>
 	<modules>
-		<module>automation</module>
 		<module>automation-services</module>
+		<module>automation-jmeter</module>
+		<module>automation</module>
 	</modules>
 	<build>
 		<plugins>
@@ -39,18 +51,12 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>com.lazerycode.jmeter</groupId>
-				<artifactId>jmeter-maven-plugin</artifactId>
-				<version>1.10.1</version>
-				<executions>
-					<execution>
-						<id>jmeter-tests</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>jmeter</goal>
-						</goals>
-					</execution>
-				</executions>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

@@ -23,7 +23,7 @@ public class OrderCandyJSONService {
             lines.add(line);
         }
         
-        orderCandy.add("orderLines", lines);
+        orderCandy.add("orderLines", lines );
         
         Gson gson = new GsonBuilder().setPrettyPrinting().serializeNulls().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
         String request = gson.toJson(orderCandy);
