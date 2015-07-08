@@ -1,11 +1,8 @@
 package candystore.website;
 
-import static org.fest.assertions.api.Assertions.assertThat;
-
-import java.io.File;
-import java.io.IOException;
-import java.lang.reflect.Method;
-
+import atf.toolbox.ATFHandler;
+import atf.toolbox.managers.ConfigurationManager;
+import candystore.website.pageobjects.ContactUsPage;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -15,9 +12,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import atf.toolbox.ATFHandler;
-import atf.toolbox.managers.ConfigurationManager;
-import candystore.website.pageobjects.ContactUsPage;
+import java.io.File;
+import java.io.IOException;
+import java.lang.reflect.Method;
+
+import static org.fest.assertions.api.Assertions.assertThat;
 
 public class ContactUsPageTest {
 

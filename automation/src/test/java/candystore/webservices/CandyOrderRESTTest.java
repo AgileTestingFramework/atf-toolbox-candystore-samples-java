@@ -1,8 +1,8 @@
 package candystore.webservices;
 
-import static com.jayway.restassured.RestAssured.get;
-import static com.jayway.restassured.RestAssured.given;
-import static org.fest.assertions.api.Assertions.assertThat;
+import com.jayway.restassured.response.Response;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
@@ -10,10 +10,9 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
-import com.jayway.restassured.response.Response;
+import static com.jayway.restassured.RestAssured.get;
+import static com.jayway.restassured.RestAssured.given;
+import static org.fest.assertions.api.Assertions.assertThat;
 
 public class CandyOrderRESTTest {
 

@@ -1,11 +1,10 @@
 package candystore.webservices;
 
-import static org.fest.assertions.api.Assertions.assertThat;
-
+import candystore.webservices.schemas.com.cdyne.ws.weatherws.ForecastReturn;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import candystore.webservices.schemas.com.cdyne.ws.weatherws.ForecastReturn;
+import static org.fest.assertions.api.Assertions.assertThat;
 
 /**
  * Weather SOAP Service

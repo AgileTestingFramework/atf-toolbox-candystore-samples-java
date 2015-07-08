@@ -1,9 +1,9 @@
 package candystore.datainjection;
 
-import static org.fest.assertions.api.Assertions.assertThat;
-
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import static org.fest.assertions.api.Assertions.assertThat;
 
 public class ParameterizedTest {
 

@@ -1,9 +1,6 @@
 package candystore.screenimage;
 
-import java.awt.Desktop;
-import java.io.File;
-import java.io.IOException;
-
+import atf.toolbox.ATFHandler;
 import org.sikuli.api.ImageTarget;
 import org.sikuli.api.Relative;
 import org.sikuli.api.ScreenRegion;
@@ -11,7 +8,9 @@ import org.sikuli.api.Target;
 import org.sikuli.api.robot.Mouse;
 import org.sikuli.api.robot.desktop.DesktopMouse;
 
-import atf.toolbox.ATFHandler;
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 
 public class EventBudgetReport {
 

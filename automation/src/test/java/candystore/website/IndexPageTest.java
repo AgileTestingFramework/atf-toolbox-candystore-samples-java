@@ -1,11 +1,10 @@
 package candystore.website;
 
-import static org.fest.assertions.api.Assertions.assertThat;
-
+import candystore.website.pageobjects.IndexPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import candystore.website.pageobjects.IndexPage;
+import static org.fest.assertions.api.Assertions.assertThat;
 
 public class IndexPageTest {
 

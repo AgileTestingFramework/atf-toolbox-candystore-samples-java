@@ -1,18 +1,11 @@
 package candystore.webservices;
 
-import javax.xml.soap.MessageFactory;
-import javax.xml.soap.MimeHeaders;
-import javax.xml.soap.SOAPBody;
-import javax.xml.soap.SOAPElement;
-import javax.xml.soap.SOAPEnvelope;
-import javax.xml.soap.SOAPMessage;
-import javax.xml.soap.SOAPPart;
-
+import atf.toolbox.ATFHandler;
+import atf.toolbox.interfaces.WebService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import atf.toolbox.ATFHandler;
-import atf.toolbox.interfaces.WebService;
+import javax.xml.soap.*;
 
 /** VerifyEmailSOAPService
  *  Using the ATFHandler

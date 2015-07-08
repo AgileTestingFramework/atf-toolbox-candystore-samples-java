@@ -1,9 +1,9 @@
 package candystore.screenimage;
 
-import static org.fest.assertions.api.Assertions.assertThat;
-
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import static org.fest.assertions.api.Assertions.assertThat;
 
 public class EventBudgetReportTest {
 

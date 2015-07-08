@@ -1,14 +1,13 @@
 package candystore.website;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.LoadableComponent;
-
 import atf.toolbox.ATFHandler;
 import candystore.website.pageobjects.ContactUsPage;
 import candystore.website.pageobjects.IndexPage;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.LoadableComponent;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @SuppressWarnings("rawtypes")
 public class CandyStorePageFactory {

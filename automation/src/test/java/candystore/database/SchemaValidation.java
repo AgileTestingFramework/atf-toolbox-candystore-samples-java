@@ -1,22 +1,20 @@
 package candystore.database;
 
-import static org.fest.assertions.api.Assertions.assertThat;
-import static org.fest.assertions.api.Assertions.entry;
+import atf.toolbox.ATFHandler;
+import com.truemesh.squiggle.Order;
+import com.truemesh.squiggle.SelectQuery;
+import com.truemesh.squiggle.Table;
+import com.truemesh.squiggle.criteria.MatchCriteria;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.sql.SQLException;
 import java.sql.Types;
 import java.util.List;
 import java.util.Map;
 
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
-import atf.toolbox.ATFHandler;
-
-import com.truemesh.squiggle.Order;
-import com.truemesh.squiggle.SelectQuery;
-import com.truemesh.squiggle.Table;
-import com.truemesh.squiggle.criteria.MatchCriteria;
+import static org.fest.assertions.api.Assertions.assertThat;
+import static org.fest.assertions.api.Assertions.entry;
 
 public class SchemaValidation {
 

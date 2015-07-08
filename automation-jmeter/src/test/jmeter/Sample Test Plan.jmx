@@ -186,9 +186,9 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">10</stringProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">5</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1434650926000</longProp>
         <longProp name="ThreadGroup.end_time">1434650926000</longProp>
@@ -197,10 +197,10 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <JUnitSampler guiclass="JUnitTestSamplerGui" testclass="JUnitSampler" testname="JUnit Request" enabled="true">
-          <stringProp name="junitSampler.classname">candystore.jmeter.JUnit_JMeterCalculatorTest</stringProp>
+        <JUnitSampler guiclass="JUnitTestSamplerGui" testclass="JUnitSampler" testname="CandyOrderRESTTest" enabled="true">
+          <stringProp name="junitSampler.classname">candystore.jmeter.JUnit_JMeterCandyOrderRESTTest</stringProp>
           <stringProp name="junitsampler.constructorstring">test</stringProp>
-          <stringProp name="junitsampler.method">addTwoNumbers</stringProp>
+          <stringProp name="junitsampler.method">shouldGetOrder</stringProp>
           <stringProp name="junitsampler.pkg.filter">candystore</stringProp>
           <stringProp name="junitsampler.success">Test successful</stringProp>
           <stringProp name="junitsampler.success.code">1000</stringProp>
@@ -214,10 +214,10 @@
           <boolProp name="junitsampler.junit4">true</boolProp>
         </JUnitSampler>
         <hashTree/>
-        <JUnitSampler guiclass="JUnitTestSamplerGui" testclass="JUnitSampler" testname="JUnit Request" enabled="true">
+        <JUnitSampler guiclass="JUnitTestSamplerGui" testclass="JUnitSampler" testname="CalculatorTest" enabled="true">
           <stringProp name="junitSampler.classname">candystore.jmeter.JUnit_JMeterCalculatorTest</stringProp>
           <stringProp name="junitsampler.constructorstring">test</stringProp>
-          <stringProp name="junitsampler.method">addTwoNumbersFAIL</stringProp>
+          <stringProp name="junitsampler.method">addTwoNumbers</stringProp>
           <stringProp name="junitsampler.pkg.filter">candystore</stringProp>
           <stringProp name="junitsampler.success">Test successful</stringProp>
           <stringProp name="junitsampler.success.code">1000</stringProp>

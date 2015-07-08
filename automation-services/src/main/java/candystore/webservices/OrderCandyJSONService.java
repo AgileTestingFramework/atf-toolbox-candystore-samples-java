@@ -1,13 +1,9 @@
 package candystore.webservices;
 
+import com.google.gson.*;
+
 import java.util.Map;
 import java.util.Map.Entry;
-
-import com.google.gson.FieldNamingPolicy;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
 
 public class OrderCandyJSONService {
 

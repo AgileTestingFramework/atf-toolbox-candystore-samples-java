@@ -1,13 +1,14 @@
  package candystore.jmeter;
 
-import static org.junit.Assert.*;
+ import org.junit.Test;
 
-import org.junit.Test;
+ import static org.junit.Assert.assertTrue;
 
 public class JUnit_JMeterCalculatorTest
 {
+
 	@Test
-	public void addTwoNumbers(String test)
+	public void addTwoNumbers()
 	{
 		int num1 = 15;
 		int num2 = 30;
@@ -17,7 +18,7 @@ public class JUnit_JMeterCalculatorTest
 	}
 	
 	@Test
-	public void addTwoNumbersFAIL(String test)
+	public void addTwoNumbersFAIL()
 	{
 		int num1 = 15;
 		int num2 = 30;

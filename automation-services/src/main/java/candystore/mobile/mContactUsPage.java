@@ -1,12 +1,11 @@
 package candystore.mobile;
 
+import atf.toolbox.ATFHandler;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.LoadableComponent;
-
-import atf.toolbox.ATFHandler;
 
 public class mContactUsPage extends LoadableComponent<mContactUsPage>{
 

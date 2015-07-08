@@ -8,8 +8,51 @@
 	</parent>
 	<groupId>candystore</groupId>
 	<artifactId>automation-jmeter</artifactId>
+	<dependencies>
+		<dependency>
+			<groupId>candystore</groupId>
+			<artifactId>automation</artifactId>
+			<version>1.0.1</version>
+			<type>test-jar</type>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.6</version>
+		</dependency>
+	</dependencies>
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.10</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/jmeter/lib/junit</outputDirectory>
+							<resources>
+								<resource>
+									<directory>../automation/target</directory>
+									<includes>
+										<include>*.jar</include>
+									</includes>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<groupId>com.lazerycode.jmeter</groupId>
 				<artifactId>jmeter-maven-plugin</artifactId>
@@ -21,71 +64,65 @@
 						<goals>
 							<goal>jmeter</goal>
 						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-shade-plugin</artifactId>
-				<version>2.3</version>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>shade</goal>
-						</goals>
 						<configuration>
-							<minimizeJar>false</minimizeJar>
-							<createDependencyReducedPom>false</createDependencyReducedPom>
-							<filters>
-								<filter>
-									<artifact>*:*</artifact>
-									<excludes>
-										<exclude>META-INF/*.SF</exclude>
-										<exclude>META-INF/*.DSA</exclude>
-										<exclude>META-INF/*.RSA</exclude>
-									</excludes>
-								</filter>
-							</filters>
+							<junitLibraries>
+								<junitLibrary>
+									<groupId>candystore</groupId>
+									<artifactId>automation</artifactId>
+								</junitLibrary>
+							</junitLibraries>
 						</configuration>
 					</execution>
 				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>candystore</groupId>
+						<artifactId>automation</artifactId>
+						<version>1.0.1</version>
+					</dependency>
+					<dependency>
+						<groupId>mysql</groupId>
+						<artifactId>mysql-connector-java</artifactId>
+						<version>5.1.6</version>
+					</dependency>
+					<dependency>
+						<groupId>com.google.collections</groupId>
+						<artifactId>google-collections</artifactId>
+						<version>1.0</version>
+					</dependency>
+					<dependency>
+						<groupId>com.google.guava</groupId>
+						<artifactId>guava</artifactId>
+						<version>18.0</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.httpcomponents</groupId>
+						<artifactId>httpclient</artifactId>
+						<version>4.5</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.httpcomponents</groupId>
+						<artifactId>httpcore</artifactId>
+						<version>4.4.1</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 			<plugin>
-				<artifactId>maven-dependency-plugin</artifactId>
+				<groupId>com.lazerycode.jmeter</groupId>
+				<artifactId>jmeter-analysis-maven-plugin</artifactId>
+				<version>1.0.6</version>
 				<executions>
 					<execution>
-						<phase>package</phase>
 						<goals>
-							<goal>copy</goal>
+							<goal>analyze</goal>
 						</goals>
 						<configuration>
-							<artifactItems>
-								<artifactItem>
-									<groupId>candystore</groupId>
-									<artifactId>automation-jmeter</artifactId>
-									<version>1.0.1</version>
-								</artifactItem>
-							</artifactItems>
-							<outputDirectory>${project.basedir}/target/jmeter/lib/junit/</outputDirectory>
-							<stripVersion>false</stripVersion>
+							<source>${project.build.directory}/**/*.jtl</source>
+							<targetDirectory>${project.build.directory}/jmeter/results</targetDirectory>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
 		</plugins>
 	</build>
-	<dependencies>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.6</version>
-		</dependency>
-		<dependency>
-			<groupId>candystore</groupId>
-			<artifactId>automation</artifactId>
-			<version>1.0.1</version>
-			<type>test-jar</type>
-		</dependency>
-	</dependencies>
 </project>

@@ -1,9 +1,8 @@
 package candystore.common;
 
+import atf.toolbox.ATFHandler;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-
-import atf.toolbox.ATFHandler;
 
 public class SuiteInitializer {
 

@@ -1,14 +1,13 @@
 package candystore.datainjection;
 
-import static org.fest.assertions.api.Assertions.assertThat;
-
+import atf.toolbox.data.ScenarioData;
+import atf.toolbox.data.TestDataProvider;
+import atf.toolbox.data.XMLDataDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import atf.toolbox.data.ScenarioData;
-import atf.toolbox.data.TestDataProvider;
-import atf.toolbox.data.XMLDataDriver;
+import static org.fest.assertions.api.Assertions.assertThat;
 
 /**
  * CalculatorTest 1. Use the ATF Toolbox DataProvider 2. Use the ATF Toolbox

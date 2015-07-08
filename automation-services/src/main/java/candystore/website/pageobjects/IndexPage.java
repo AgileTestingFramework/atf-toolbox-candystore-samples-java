@@ -1,8 +1,7 @@
 package candystore.website.pageobjects;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import atf.toolbox.ATFHandler;
+import atf.toolbox.managers.ConfigurationManager;
 import org.fest.assertions.api.Fail;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -10,8 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.LoadableComponent;
 
-import atf.toolbox.ATFHandler;
-import atf.toolbox.managers.ConfigurationManager;
+import java.util.ArrayList;
+import java.util.List;
 
 public class IndexPage extends LoadableComponent<IndexPage>{
 
