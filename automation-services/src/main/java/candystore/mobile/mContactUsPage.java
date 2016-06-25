@@ -1,6 +1,6 @@
 package candystore.mobile;
 
-import atf.toolbox.ATFHandler;
+import com.agiletestingframework.toolbox.ATFHandler;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

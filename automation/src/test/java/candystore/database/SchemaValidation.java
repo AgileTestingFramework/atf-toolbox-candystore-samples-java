@@ -1,10 +1,10 @@
 package candystore.database;
 
-import atf.toolbox.ATFHandler;
-import com.truemesh.squiggle.Order;
-import com.truemesh.squiggle.SelectQuery;
-import com.truemesh.squiggle.Table;
-import com.truemesh.squiggle.criteria.MatchCriteria;
+import com.agiletestingframework.toolbox.ATFHandler;
+import io.zatarox.squiggle.Order;
+import io.zatarox.squiggle.SelectQuery;
+import io.zatarox.squiggle.Table;
+import io.zatarox.squiggle.criteria.MatchCriteria;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

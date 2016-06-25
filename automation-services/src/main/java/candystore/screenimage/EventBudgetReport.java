@@ -1,6 +1,6 @@
 package candystore.screenimage;
 
-import atf.toolbox.ATFHandler;
+import com.agiletestingframework.toolbox.ATFHandler;
 import org.sikuli.api.ImageTarget;
 import org.sikuli.api.Relative;
 import org.sikuli.api.ScreenRegion;

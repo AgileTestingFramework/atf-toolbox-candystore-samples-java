@@ -1,8 +1,8 @@
 package candystore.datainjection;
 
-import atf.toolbox.data.ScenarioData;
-import atf.toolbox.data.TestDataProvider;
-import atf.toolbox.data.XMLDataDriver;
+import com.agiletestingframework.toolbox.data.ScenarioData;
+import com.agiletestingframework.toolbox.data.TestDataProvider;
+import com.agiletestingframework.toolbox.data.XMLDataDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

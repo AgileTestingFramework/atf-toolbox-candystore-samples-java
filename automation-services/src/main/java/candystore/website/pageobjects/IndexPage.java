@@ -1,7 +1,7 @@
 package candystore.website.pageobjects;
 
-import atf.toolbox.ATFHandler;
-import atf.toolbox.managers.ConfigurationManager;
+import com.agiletestingframework.toolbox.ATFHandler;
+import com.agiletestingframework.toolbox.managers.ConfigurationManager;
 import org.fest.assertions.api.Fail;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;

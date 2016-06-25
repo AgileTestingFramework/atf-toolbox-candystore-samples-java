@@ -1,6 +1,6 @@
 package candystore.common;
 
-import atf.toolbox.ATFHandler;
+import com.agiletestingframework.toolbox.ATFHandler;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 

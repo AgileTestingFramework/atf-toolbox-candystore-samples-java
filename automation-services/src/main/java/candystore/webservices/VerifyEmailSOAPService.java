@@ -1,7 +1,7 @@
 package candystore.webservices;
 
-import atf.toolbox.ATFHandler;
-import atf.toolbox.interfaces.WebService;
+import com.agiletestingframework.toolbox.ATFHandler;
+import com.agiletestingframework.toolbox.interfaces.WebService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

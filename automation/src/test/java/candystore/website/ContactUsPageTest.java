@@ -1,7 +1,7 @@
 package candystore.website;
 
-import atf.toolbox.ATFHandler;
-import atf.toolbox.managers.ConfigurationManager;
+import com.agiletestingframework.toolbox.ATFHandler;
+import com.agiletestingframework.toolbox.managers.ConfigurationManager;
 import candystore.website.pageobjects.ContactUsPage;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;

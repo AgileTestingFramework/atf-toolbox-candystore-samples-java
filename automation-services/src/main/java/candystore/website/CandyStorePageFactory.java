@@ -1,6 +1,6 @@
 package candystore.website;
 
-import atf.toolbox.ATFHandler;
+import com.agiletestingframework.toolbox.ATFHandler;
 import candystore.website.pageobjects.ContactUsPage;
 import candystore.website.pageobjects.IndexPage;
 import org.openqa.selenium.support.PageFactory;
@@ -31,14 +31,14 @@ public class CandyStorePageFactory {
 			} else if (pageObjectType == CONTACTUS) {
 				instance = new ContactUsPage();
 			}
-            
-			// Add it to map   
+
+			// Add it to map
             instances.put(pageObjectType, instance);
         }
-		
+
 		// Initialize the page object elements
         PageFactory.initElements(ATFHandler.getInstance().getWebAutomation().getWebDriver(), instance);
-        
+
         return instance;
     }
 }

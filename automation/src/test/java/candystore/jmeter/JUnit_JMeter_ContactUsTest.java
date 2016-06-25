@@ -1,6 +1,6 @@
 package candystore.jmeter;
 
-import atf.toolbox.ATFHandler;
+import com.agiletestingframework.toolbox.ATFHandler;
 import candystore.website.CandyStorePageFactory;
 import candystore.website.pageobjects.ContactUsPage;
 import org.junit.AfterClass;
