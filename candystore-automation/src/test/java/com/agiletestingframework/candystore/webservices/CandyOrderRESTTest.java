@@ -1,6 +1,9 @@
-package candystore.webservices;
+package com.agiletestingframework.candystore.webservices;
 
 import com.jayway.restassured.response.Response;
+
+import com.agiletestingframework.candystore.webservices.OrderCandyJSONService;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

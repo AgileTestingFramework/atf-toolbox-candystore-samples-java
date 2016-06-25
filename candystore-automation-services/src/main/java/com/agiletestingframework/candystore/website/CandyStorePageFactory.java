@@ -1,8 +1,9 @@
-package candystore.website;
+package com.agiletestingframework.candystore.website;
 
+import com.agiletestingframework.candystore.website.pageobjects.ContactUsPage;
+import com.agiletestingframework.candystore.website.pageobjects.IndexPage;
 import com.agiletestingframework.toolbox.ATFHandler;
-import candystore.website.pageobjects.ContactUsPage;
-import candystore.website.pageobjects.IndexPage;
+
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.LoadableComponent;
 

@@ -1,6 +1,7 @@
-package candystore.webservices;
+package com.agiletestingframework.candystore.webservices;
 
-import candystore.webservices.schemas.com.cdyne.ws.weatherws.ForecastReturn;
+import com.agiletestingframework.candystore.webservices.WeatherSOAPService;
+import com.agiletestingframework.candystore.webservices.schemas.com.cdyne.ws.weatherws.ForecastReturn;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

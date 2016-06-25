@@ -1,4 +1,4 @@
-package candystore.common;
+package com.agiletestingframework.candystore.common;
 
 import com.agiletestingframework.toolbox.ATFHandler;
 import org.testng.annotations.AfterSuite;

@@ -1,4 +1,4 @@
-package candystore.screenimage;
+package com.agiletestingframework.candystore.screenimage;
 
 import com.agiletestingframework.toolbox.ATFHandler;
 import org.sikuli.api.ImageTarget;

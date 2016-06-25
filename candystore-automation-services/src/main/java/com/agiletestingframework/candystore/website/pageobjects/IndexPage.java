@@ -1,4 +1,4 @@
-package candystore.website.pageobjects;
+package com.agiletestingframework.candystore.website.pageobjects;
 
 import com.agiletestingframework.toolbox.ATFHandler;
 import com.agiletestingframework.toolbox.managers.ConfigurationManager;

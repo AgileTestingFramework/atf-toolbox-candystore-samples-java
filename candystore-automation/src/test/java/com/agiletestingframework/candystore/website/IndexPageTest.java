@@ -1,6 +1,7 @@
-package candystore.website;
+package com.agiletestingframework.candystore.website;
 
-import candystore.website.pageobjects.IndexPage;
+import com.agiletestingframework.candystore.website.CandyStorePageFactory;
+import com.agiletestingframework.candystore.website.pageobjects.IndexPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

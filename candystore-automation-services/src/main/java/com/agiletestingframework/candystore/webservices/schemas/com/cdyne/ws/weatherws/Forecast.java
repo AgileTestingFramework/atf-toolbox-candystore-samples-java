@@ -1,5 +1,5 @@
 
-package candystore.webservices.schemas.com.cdyne.ws.weatherws;
+package com.agiletestingframework.candystore.webservices.schemas.com.cdyne.ws.weatherws;
 
 import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;

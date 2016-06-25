@@ -3,8 +3,8 @@
 <suite name="website-ALL-suite">
 	<test name="All Tests in the package website">
 		<packages>
-			<package name="candystore.common" />
-			<package name="candystore.website" />
+			<package name="com.agiletestingframework.candystore.common" />
+			<package name="com.agiletestingframework.candystore.website" />
 		</packages>
 	</test>
 </suite>

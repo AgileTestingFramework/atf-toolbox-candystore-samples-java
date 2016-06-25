@@ -1,7 +1,9 @@
-package candystore.mobile;
+package com.agiletestingframework.candystore.mobile;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import com.agiletestingframework.candystore.mobile.mContactUsPage;
 
 import static org.fest.assertions.api.Assertions.assertThat;
 

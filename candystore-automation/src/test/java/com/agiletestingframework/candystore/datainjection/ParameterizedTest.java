@@ -1,4 +1,4 @@
-package candystore.datainjection;
+package com.agiletestingframework.candystore.datainjection;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;

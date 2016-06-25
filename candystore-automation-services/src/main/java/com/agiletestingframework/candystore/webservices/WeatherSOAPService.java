@@ -1,8 +1,8 @@
-package candystore.webservices;
+package com.agiletestingframework.candystore.webservices;
 
-import candystore.webservices.schemas.com.cdyne.ws.weatherws.ForecastReturn;
-import candystore.webservices.schemas.com.cdyne.ws.weatherws.GetCityForecastByZIP;
-import candystore.webservices.schemas.com.cdyne.ws.weatherws.Weather;
+import com.agiletestingframework.candystore.webservices.schemas.com.cdyne.ws.weatherws.ForecastReturn;
+import com.agiletestingframework.candystore.webservices.schemas.com.cdyne.ws.weatherws.GetCityForecastByZIP;
+import com.agiletestingframework.candystore.webservices.schemas.com.cdyne.ws.weatherws.Weather;
 
 /**
  * WeatherSOAPService

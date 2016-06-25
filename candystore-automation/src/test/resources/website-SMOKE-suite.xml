@@ -8,8 +8,8 @@
 			</run>
 		</groups>
 		<packages>
-			<package name="candystore.common" />
-			<package name="candystore.website" />
+			<package name="com.agiletestingframework.candystore.common" />
+			<package name="com.agiletestingframework.candystore.website" />
 		</packages>
 	</test>
 </suite>

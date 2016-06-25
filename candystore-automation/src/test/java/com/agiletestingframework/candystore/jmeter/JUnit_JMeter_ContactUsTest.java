@@ -1,8 +1,8 @@
-package candystore.jmeter;
+package com.agiletestingframework.candystore.jmeter;
 
 import com.agiletestingframework.toolbox.ATFHandler;
-import candystore.website.CandyStorePageFactory;
-import candystore.website.pageobjects.ContactUsPage;
+import com.agiletestingframework.candystore.website.CandyStorePageFactory;
+import com.agiletestingframework.candystore.website.pageobjects.ContactUsPage;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;

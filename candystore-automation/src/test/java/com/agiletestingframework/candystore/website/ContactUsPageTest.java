@@ -1,8 +1,10 @@
-package candystore.website;
+package com.agiletestingframework.candystore.website;
 
 import com.agiletestingframework.toolbox.ATFHandler;
 import com.agiletestingframework.toolbox.managers.ConfigurationManager;
-import candystore.website.pageobjects.ContactUsPage;
+
+import com.agiletestingframework.candystore.website.CandyStorePageFactory;
+import com.agiletestingframework.candystore.website.pageobjects.ContactUsPage;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

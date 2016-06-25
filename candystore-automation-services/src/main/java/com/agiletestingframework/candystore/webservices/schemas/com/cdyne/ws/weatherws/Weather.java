@@ -1,5 +1,5 @@
 
-package candystore.webservices.schemas.com.cdyne.ws.weatherws;
+package com.agiletestingframework.candystore.webservices.schemas.com.cdyne.ws.weatherws;
 
 import javax.xml.namespace.QName;
 import javax.xml.ws.*;

@@ -1,4 +1,4 @@
-package candystore.webservices;
+package com.agiletestingframework.candystore.webservices;
 
 import com.jayway.restassured.path.xml.XmlPath;
 import org.testng.annotations.BeforeClass;

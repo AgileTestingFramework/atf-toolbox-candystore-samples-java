@@ -1,4 +1,4 @@
-package candystore.database;
+package com.agiletestingframework.candystore.database;
 
 import com.agiletestingframework.toolbox.ATFHandler;
 import io.zatarox.squiggle.Order;

@@ -1,8 +1,10 @@
-package candystore.webservices;
+package com.agiletestingframework.candystore.webservices;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.agiletestingframework.candystore.webservices.VerifyEmailSOAPService;
 
 import static org.fest.assertions.api.Assertions.assertThat;
 

@@ -3,10 +3,10 @@
 <suite name="website-CONTACTUS-suite">
 	<test name="All tests in the class ContactUsPageTest">
 		<packages>
-			<package name="candystore.common" />
+			<package name="com.agiletestingframework.candystore.common" />
 		</packages>
 		<classes>
-			<class name="candystore.website.ContactUsPageTest" />
+			<class name="com.agiletestingframework.candystore.website.ContactUsPageTest" />
 		</classes>
 	</test>
 </suite>

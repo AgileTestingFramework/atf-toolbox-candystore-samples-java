@@ -1,4 +1,4 @@
-package candystore.mobile;
+package com.agiletestingframework.candystore.mobile;
 
 import com.agiletestingframework.toolbox.ATFHandler;
 import org.openqa.selenium.By;
@@ -16,7 +16,7 @@ public class mContactUsPage extends LoadableComponent<mContactUsPage>{
 	
 	@Override
 	protected void load() {
-		ATFHandler.getInstance().getMobileAutomation().getMobileDriver().navigate().to("http://store.agiletestingframework.com/candystore/contact");
+		ATFHandler.getInstance().getMobileAutomation().getMobileDriver().navigate().to("http://store.agiletestingframework.com/com.agiletestingframework.candystore/contact");
 		isLoaded();
 	}
 	

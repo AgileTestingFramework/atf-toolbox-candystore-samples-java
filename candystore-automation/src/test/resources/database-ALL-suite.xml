@@ -3,8 +3,8 @@
 <suite name="database-ALL-suite">
 	<test name="All tests in the database package">
 		<packages>
-			<package name="candystore.common" />
-			<package name="candystore.database" />
+			<package name="com.agiletestingframework.candystore.common" />
+			<package name="com.agiletestingframework.candystore.database" />
 		</packages>
 	</test>
 </suite>

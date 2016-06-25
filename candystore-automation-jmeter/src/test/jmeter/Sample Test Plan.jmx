@@ -198,10 +198,10 @@
       </ThreadGroup>
       <hashTree>
         <JUnitSampler guiclass="JUnitTestSamplerGui" testclass="JUnitSampler" testname="CandyOrderRESTTest" enabled="true">
-          <stringProp name="junitSampler.classname">candystore.jmeter.JUnit_JMeterCandyOrderRESTTest</stringProp>
+          <stringProp name="junitSampler.classname">com.agiletestingframework.candystore.jmeter.JUnit_JMeterCandyOrderRESTTest</stringProp>
           <stringProp name="junitsampler.constructorstring">test</stringProp>
           <stringProp name="junitsampler.method">shouldGetOrder</stringProp>
-          <stringProp name="junitsampler.pkg.filter">candystore</stringProp>
+          <stringProp name="junitsampler.pkg.filter">com.agiletestingframework.candystore</stringProp>
           <stringProp name="junitsampler.success">Test successful</stringProp>
           <stringProp name="junitsampler.success.code">1000</stringProp>
           <stringProp name="junitsampler.failure">Test failed</stringProp>
@@ -215,10 +215,10 @@
         </JUnitSampler>
         <hashTree/>
         <JUnitSampler guiclass="JUnitTestSamplerGui" testclass="JUnitSampler" testname="CalculatorTest" enabled="true">
-          <stringProp name="junitSampler.classname">candystore.jmeter.JUnit_JMeterCalculatorTest</stringProp>
+          <stringProp name="junitSampler.classname">com.agiletestingframework.candystore.jmeter.JUnit_JMeterCalculatorTest</stringProp>
           <stringProp name="junitsampler.constructorstring">test</stringProp>
           <stringProp name="junitsampler.method">addTwoNumbers</stringProp>
-          <stringProp name="junitsampler.pkg.filter">candystore</stringProp>
+          <stringProp name="junitsampler.pkg.filter">com.agiletestingframework.candystore</stringProp>
           <stringProp name="junitsampler.success">Test successful</stringProp>
           <stringProp name="junitsampler.success.code">1000</stringProp>
           <stringProp name="junitsampler.failure">Test failed</stringProp>
@@ -232,10 +232,10 @@
         </JUnitSampler>
         <hashTree/>
         <JUnitSampler guiclass="JUnitTestSamplerGui" testclass="JUnitSampler" testname="shouldNotExceedMaxCharactersAllowed" enabled="true">
-          <stringProp name="junitSampler.classname">candystore.jmeter.JUnit_JMeter_ContactUsTest</stringProp>
+          <stringProp name="junitSampler.classname">com.agiletestingframework.candystore.jmeter.JUnit_JMeter_ContactUsTest</stringProp>
           <stringProp name="junitsampler.constructorstring">test</stringProp>
           <stringProp name="junitsampler.method">validateFirstNameAcceptsNoMoreThanMaxChar</stringProp>
-          <stringProp name="junitsampler.pkg.filter">candystore</stringProp>
+          <stringProp name="junitsampler.pkg.filter">com.agiletestingframework.candystore</stringProp>
           <stringProp name="junitsampler.success">Test successful</stringProp>
           <stringProp name="junitsampler.success.code">1000</stringProp>
           <stringProp name="junitsampler.failure">Test failed</stringProp>

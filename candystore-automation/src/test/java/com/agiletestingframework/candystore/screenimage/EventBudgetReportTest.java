@@ -1,7 +1,9 @@
-package candystore.screenimage;
+package com.agiletestingframework.candystore.screenimage;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import com.agiletestingframework.candystore.screenimage.EventBudgetReport;
 
 import static org.fest.assertions.api.Assertions.assertThat;
 

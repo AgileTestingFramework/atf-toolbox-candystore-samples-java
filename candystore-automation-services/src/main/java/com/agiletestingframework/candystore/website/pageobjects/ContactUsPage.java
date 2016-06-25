@@ -1,8 +1,9 @@
-package candystore.website.pageobjects;
+package com.agiletestingframework.candystore.website.pageobjects;
 
-import candystore.website.CandyStorePageFactory;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.LoadableComponent;
+
+import com.agiletestingframework.candystore.website.CandyStorePageFactory;
 
 public class ContactUsPage extends LoadableComponent<ContactUsPage>{
 

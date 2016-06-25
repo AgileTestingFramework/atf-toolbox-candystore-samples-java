@@ -1,4 +1,4 @@
-package candystore.webservices;
+package com.agiletestingframework.candystore.webservices;
 
 import com.google.gson.*;
 

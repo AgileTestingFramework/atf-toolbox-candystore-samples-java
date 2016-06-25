@@ -1,4 +1,4 @@
-package candystore.jmeter;
+package com.agiletestingframework.candystore.jmeter;
 
 import org.testng.annotations.Test;
 

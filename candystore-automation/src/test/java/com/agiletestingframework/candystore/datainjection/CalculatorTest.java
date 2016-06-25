@@ -1,4 +1,4 @@
-package candystore.datainjection;
+package com.agiletestingframework.candystore.datainjection;
 
 import com.agiletestingframework.toolbox.data.ScenarioData;
 import com.agiletestingframework.toolbox.data.TestDataProvider;
