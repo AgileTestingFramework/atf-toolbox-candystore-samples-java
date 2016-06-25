@@ -9,6 +9,10 @@
 
 	<artifactId>candystore-automation-jmeter</artifactId>
 
+	<name>Candystore JMeter</name>
+	<description>Example JMX file.</description>
+	<url>https://github.com/AgileTestingFramework/atf-toolbox-candystore-samples-java</url>
+
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>

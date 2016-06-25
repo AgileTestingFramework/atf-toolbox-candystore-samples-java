@@ -8,7 +8,9 @@
     </parent>
 
     <artifactId>candystore-automation</artifactId>
-
+	<name>Candystore sample tests</name>
+	<description>Examples of different types of tests.</description>
+	<url>https://github.com/AgileTestingFramework/atf-toolbox-candystore-samples-java</url>
 
 	<licenses>
 		<license>

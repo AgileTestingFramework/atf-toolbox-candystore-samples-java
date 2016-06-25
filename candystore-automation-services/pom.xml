@@ -8,10 +8,11 @@
     <version>5.0.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>candystore-automation-services</artifactId>
+	<artifactId>candystore-automation-services</artifactId>
 
-	<name>candystore-automation-services</name>
-	<url>http://maven.apache.org</url>
+	<name>Candystore sample support objects</name>
+	<description>Supporting objects for testing samples.</description>
+	<url>https://github.com/AgileTestingFramework/atf-toolbox-candystore-samples-java</url>
 
 	<licenses>
 		<license>
