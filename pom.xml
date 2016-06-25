@@ -8,8 +8,9 @@
 	<version>2.0</version>
 	<packaging>pom</packaging>
 
-	<name>atf-candystore-samples</name>
-	<url>http://www.agiletestingframework.com</url>
+	<name>Agile Testing Framework Candystore Samples</name>
+	<description>Sample project that helps get started with Automation Testing Framework Toolbox.</description>
+	<url>https://github.com/AgileTestingFramework/atf-toolbox-candystore-samples-java</url>
 
 	<licenses>
 		<license>
@@ -18,10 +19,69 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+
+	<developers>
+		<developer>
+			<name>Kristen Varona</name>
+			<email>kristen@agiletestingframework.com</email>
+			<organization>Agile Testing Framework</organization>
+			<organizationUrl>http://www.agiletestingframework.com</organizationUrl>
+		</developer>
+		<developer>
+			<id>srufle</id>
+			<name>Stephen Rufle</name>
+			<email>stephen@agiletestingframework.com</email>
+			<organization>Agile Testing Framework</organization>
+			<organizationUrl>http://www.agiletestingframework.com</organizationUrl>
+		</developer>
+		<developer>
+			<name>Tom Gilmore</name>
+			<email>tom@agiletestingframework.com</email>
+			<organization>Agile Testing Framework</organization>
+			<organizationUrl>http://www.agiletestingframework.com</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/AgileTestingFramework/atf-toolbox-candystore-samples-java.git</connection>
+		<developerConnection>scm:git:git@github.com:AgileTestingFramework/atf-toolbox-candystore-samples-java.git</developerConnection>
+		<url>http://github.com/AgileTestingFramework/atf-toolbox-candystore-samples-java/tree/master</url>
+	</scm>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+
 	<properties>
 		<java.version>7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+	<repositories>
+	    <repository>
+	        <id>repo-liferay</id>
+	        <name>oss-liferay</name>
+	        <url>https://repository.liferay.com/nexus/content/groups/public</url>
+	        <snapshots>
+	            <enabled>true</enabled>
+	        </snapshots>
+	    </repository>
+	    <repository>
+	        <id>oss-sonatype</id>
+	        <name>oss-sonatype</name>
+	        <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+	        <snapshots>
+	            <enabled>true</enabled>
+	        </snapshots>
+	    </repository>
+	</repositories>
+	
 	<dependencies>
 		<dependency>
 			<groupId>atf</groupId>
