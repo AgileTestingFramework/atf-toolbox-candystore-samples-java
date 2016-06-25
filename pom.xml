@@ -5,7 +5,7 @@
 
 	<groupId>atf</groupId>
 	<artifactId>candystore-samples</artifactId>
-	<version>2.0</version>
+	<version>5.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Agile Testing Framework Candystore Samples</name>
@@ -61,6 +61,7 @@
 	<properties>
 		<java.version>7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<atf-toolbox.version>5.0.0-SNAPSHOT</atf-toolbox.version>
 	</properties>
 
 	<repositories>
@@ -81,12 +82,12 @@
 	        </snapshots>
 	    </repository>
 	</repositories>
-	
+
 	<dependencies>
 		<dependency>
-			<groupId>atf</groupId>
-			<artifactId>toolbox</artifactId>
-			<version>2.0</version>
+			<groupId>com.agiletestingframework</groupId>
+			<artifactId>atf-toolbox</artifactId>
+			<version>${atf-toolbox.version}</version>
 		</dependency>
 	</dependencies>
 	<modules>
