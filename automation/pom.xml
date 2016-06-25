@@ -6,8 +6,10 @@
         <artifactId>atf-candystore-samples</artifactId>
         <version>5.0.0-SNAPSHOT</version>
     </parent>
-    <artifactId>automation</artifactId>
-    <groupId>candystore</groupId>
+
+    <groupId>com.agiletestingframework</groupId>
+    <artifactId>candystore-automation</artifactId>
+
 
 	<licenses>
 		<license>
@@ -19,8 +21,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>candystore</groupId>
-            <artifactId>automation-services</artifactId>
+            <groupId>com.agiletestingframework</groupId>
+            <artifactId>candystore-automation-services</artifactId>
             <version>${atf-toolbox.version}</version>
         </dependency>
     </dependencies>
