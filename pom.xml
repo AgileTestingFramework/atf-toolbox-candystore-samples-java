@@ -91,9 +91,9 @@
 		</dependency>
 	</dependencies>
 	<modules>
-		<module>automation-services</module>
-		<module>automation-jmeter</module>
-		<module>automation</module>
+		<module>candystore-automation-services</module>
+		<module>candystore-automation-jmeter</module>
+		<module>candystore-automation</module>
 	</modules>
 	<build>
 		<plugins>
