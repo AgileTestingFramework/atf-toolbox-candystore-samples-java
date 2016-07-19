@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.agiletestingframework</groupId>
             <artifactId>candystore-automation-services</artifactId>
-            <version>${atf-toolbox.version}</version>
+            <version>${pom.version}</version>
         </dependency>
     </dependencies>
 

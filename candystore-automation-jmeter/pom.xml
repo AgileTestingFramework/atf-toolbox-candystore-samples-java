@@ -25,7 +25,7 @@
 		<dependency>
 			<groupId>com.agiletestingframework</groupId>
 			<artifactId>candystore-automation</artifactId>
-			<version>${atf-toolbox.version}</version>
+			<version>${pom.version}</version>
 			<type>test-jar</type>
 		</dependency>
 		<dependency>
@@ -91,7 +91,7 @@
 					<dependency>
 						<groupId>com.agiletestingframework</groupId>
 						<artifactId>candystore-automation</artifactId>
-						<version>${atf-toolbox.version}</version>
+						<version>${pom.version}</version>
 					</dependency>
 					<dependency>
 						<groupId>mysql</groupId>
