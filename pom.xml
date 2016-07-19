@@ -61,7 +61,7 @@
 	<properties>
 		<java.version>7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<atf-toolbox.version>5.0.0-SNAPSHOT</atf-toolbox.version>
+		<atf-toolbox.version>5.0.1</atf-toolbox.version>
 	</properties>
 
 	<repositories>
