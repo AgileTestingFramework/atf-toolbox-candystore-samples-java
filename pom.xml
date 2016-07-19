@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.agiletestingframework</groupId>
 	<artifactId>atf-candystore-samples</artifactId>
-	<version>5.0.0-SNAPSHOT</version>
+	<version>5.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Agile Testing Framework Candystore Samples</name>
@@ -46,7 +45,8 @@
 		<connection>scm:git:git://github.com/AgileTestingFramework/atf-toolbox-candystore-samples-java.git</connection>
 		<developerConnection>scm:git:git@github.com:AgileTestingFramework/atf-toolbox-candystore-samples-java.git</developerConnection>
 		<url>http://github.com/AgileTestingFramework/atf-toolbox-candystore-samples-java/tree/master</url>
-	</scm>
+	  <tag>HEAD</tag>
+  </scm>
 	<distributionManagement>
 		<snapshotRepository>
 			<id>ossrh</id>
