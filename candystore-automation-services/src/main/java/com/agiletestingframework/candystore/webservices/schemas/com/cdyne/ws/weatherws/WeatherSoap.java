@@ -39,6 +39,8 @@ public interface WeatherSoap {
      * Allows you to get your City Forecast Over the Next 7 Days, which is updated hourly. U.S. Only
      * 
      * @param zip
+     *     allowed object is
+     *     {@link String }
      * @return
      *     returns com.cdyne.ws.weatherws.ForecastReturn
      */
@@ -54,6 +56,8 @@ public interface WeatherSoap {
      * Allows you to get your City's Weather, which is updated hourly. U.S. Only
      * 
      * @param zip
+     *     allowed object is
+     *     {@link String }
      * @return
      *     returns com.cdyne.ws.weatherws.WeatherReturn
      */

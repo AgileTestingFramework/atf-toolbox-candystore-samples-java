@@ -45,7 +45,9 @@ public class WeatherDescription {
 
     /**
      * Gets the value of the weatherID property.
-     * 
+     * @return
+     *     possible object is
+     *     {@link Short }
      */
     public short getWeatherID() {
         return weatherID;
@@ -53,7 +55,9 @@ public class WeatherDescription {
 
     /**
      * Sets the value of the weatherID property.
-     * 
+     * @param value
+     *     allowed object is
+     *     {@link Short }
      */
     public void setWeatherID(short value) {
         this.weatherID = value;

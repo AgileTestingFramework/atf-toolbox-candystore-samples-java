@@ -89,7 +89,9 @@ public class WeatherReturn {
 
     /**
      * Gets the value of the success property.
-     * 
+     * @return
+     *     possible object is
+     *     {@link Boolean }
      */
     public boolean isSuccess() {
         return success;
@@ -97,7 +99,9 @@ public class WeatherReturn {
 
     /**
      * Sets the value of the success property.
-     * 
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
      */
     public void setSuccess(boolean value) {
         this.success = value;
@@ -201,7 +205,9 @@ public class WeatherReturn {
 
     /**
      * Gets the value of the weatherID property.
-     * 
+     * @return
+     *     possible object is
+     *     {@link Short }
      */
     public short getWeatherID() {
         return weatherID;
@@ -209,7 +215,9 @@ public class WeatherReturn {
 
     /**
      * Sets the value of the weatherID property.
-     * 
+     * @param value
+     *     allowed object is
+     *     {@link Short }
      */
     public void setWeatherID(short value) {
         this.weatherID = value;

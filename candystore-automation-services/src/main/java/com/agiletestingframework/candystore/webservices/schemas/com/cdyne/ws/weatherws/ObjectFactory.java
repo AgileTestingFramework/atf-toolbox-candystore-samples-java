@@ -37,7 +37,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GetWeatherInformationResponse }
-     * 
+     * @return
+     *     possible object is
+     *     {@link GetWeatherInformationResponse }
      */
     public GetWeatherInformationResponse createGetWeatherInformationResponse() {
         return new GetWeatherInformationResponse();
@@ -45,7 +47,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ArrayOfWeatherDescription }
-     * 
+     * @return
+     *     possible object is
+     *     {@link ArrayOfWeatherDescription }
      */
     public ArrayOfWeatherDescription createArrayOfWeatherDescription() {
         return new ArrayOfWeatherDescription();
@@ -53,7 +57,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GetCityForecastByZIP }
-     * 
+     * @return
+     *     possible object is
+     *     {@link GetCityForecastByZIP }
      */
     public GetCityForecastByZIP createGetCityForecastByZIP() {
         return new GetCityForecastByZIP();
@@ -61,7 +67,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GetCityWeatherByZIPResponse }
-     * 
+     * @return
+     *     possible object is
+     *     {@link GetCityWeatherByZIPResponse }
      */
     public GetCityWeatherByZIPResponse createGetCityWeatherByZIPResponse() {
         return new GetCityWeatherByZIPResponse();
@@ -69,7 +77,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link WeatherReturn }
-     * 
+     * @return
+     *     possible object is
+     *     {@link WeatherReturn }
      */
     public WeatherReturn createWeatherReturn() {
         return new WeatherReturn();
@@ -77,7 +87,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GetWeatherInformation }
-     * 
+     * @return
+     *     possible object is
+     *     {@link GetWeatherInformation }
      */
     public GetWeatherInformation createGetWeatherInformation() {
         return new GetWeatherInformation();
@@ -85,7 +97,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GetCityWeatherByZIP }
-     * 
+     * @return
+     *     possible object is
+     *     {@link GetCityWeatherByZIP }
      */
     public GetCityWeatherByZIP createGetCityWeatherByZIP() {
         return new GetCityWeatherByZIP();
@@ -93,7 +107,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ForecastReturn }
-     * 
+     * @return
+     *     possible object is
+     *     {@link ForecastReturn }
      */
     public ForecastReturn createForecastReturn() {
         return new ForecastReturn();
@@ -101,7 +117,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GetCityForecastByZIPResponse }
-     * 
+     * @return
+     *     possible object is
+     *     {@link GetCityForecastByZIPResponse }
      */
     public GetCityForecastByZIPResponse createGetCityForecastByZIPResponse() {
         return new GetCityForecastByZIPResponse();
@@ -109,7 +127,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link POP }
-     * 
+     * @return
+     *     possible object is
+     *     {@link POP }
      */
     public POP createPOP() {
         return new POP();
@@ -117,7 +137,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Temp }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Temp }
      */
     public Temp createTemp() {
         return new Temp();
@@ -125,7 +147,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link WeatherDescription }
-     * 
+     * @return
+     *     possible object is
+     *     {@link WeatherDescription }
      */
     public WeatherDescription createWeatherDescription() {
         return new WeatherDescription();
@@ -133,7 +157,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Forecast }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Forecast }
      */
     public Forecast createForecast() {
         return new Forecast();
@@ -141,7 +167,9 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ArrayOfForecast }
-     * 
+     * @return
+     *     possible object is
+     *     {@link ArrayOfForecast }
      */
     public ArrayOfForecast createArrayOfForecast() {
         return new ArrayOfForecast();
@@ -149,7 +177,12 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfWeatherDescription }{@code >}}
-     * 
+     * @param value
+     *     allowed object is
+     *     {@link ArrayOfWeatherDescription }
+     * @return
+     *     possible object is
+     *     {@link ArrayOfWeatherDescription }
      */
     @XmlElementDecl(namespace = "http://ws.cdyne.com/WeatherWS/", name = "ArrayOfWeatherDescription")
     public JAXBElement<ArrayOfWeatherDescription> createArrayOfWeatherDescription(ArrayOfWeatherDescription value) {
@@ -158,7 +191,12 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link WeatherReturn }{@code >}}
-     * 
+     * @param value
+     *     allowed object is
+     *     {@link WeatherReturn }
+     * @return
+     *     possible object is
+     *     {@link WeatherReturn }
      */
     @XmlElementDecl(namespace = "http://ws.cdyne.com/WeatherWS/", name = "WeatherReturn")
     public JAXBElement<WeatherReturn> createWeatherReturn(WeatherReturn value) {
@@ -167,7 +205,12 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ForecastReturn }{@code >}}
-     * 
+     * @param value
+     *     allowed object is
+     *     {@link ForecastReturn }
+     * @return
+     *     possible object is
+     *     {@link ForecastReturn }
      */
     @XmlElementDecl(namespace = "http://ws.cdyne.com/WeatherWS/", name = "ForecastReturn")
     public JAXBElement<ForecastReturn> createForecastReturn(ForecastReturn value) {

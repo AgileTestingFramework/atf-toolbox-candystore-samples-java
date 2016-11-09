@@ -57,7 +57,9 @@ public class ForecastReturn {
 
     /**
      * Gets the value of the success property.
-     * 
+     * @return
+     *     possible object is
+     *     {@link Boolean }
      */
     public boolean isSuccess() {
         return success;
@@ -65,7 +67,9 @@ public class ForecastReturn {
 
     /**
      * Sets the value of the success property.
-     * 
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
      */
     public void setSuccess(boolean value) {
         this.success = value;

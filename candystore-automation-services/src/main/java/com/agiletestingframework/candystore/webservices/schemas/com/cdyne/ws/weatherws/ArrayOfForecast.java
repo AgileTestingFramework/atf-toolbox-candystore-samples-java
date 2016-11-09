@@ -57,7 +57,7 @@ public class ArrayOfForecast {
      * Objects of the following type(s) are allowed in the list
      * {@link Forecast }
      * 
-     * 
+     * @return  list of forecast
      */
     public List<Forecast> getForecast() {
         if (forecast == null) {

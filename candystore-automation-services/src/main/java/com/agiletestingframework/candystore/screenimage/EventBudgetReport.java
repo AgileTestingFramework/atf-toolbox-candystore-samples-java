@@ -48,7 +48,7 @@ public class EventBudgetReport {
 	/**
 	 * isImageDisplayed
 	 * @param imagePatternFile image pattern to match and 
-	 * @return
+	 * @return is image displayed
 	 */
 	public boolean isImageDisplayed(String imagePatternFile) {
 

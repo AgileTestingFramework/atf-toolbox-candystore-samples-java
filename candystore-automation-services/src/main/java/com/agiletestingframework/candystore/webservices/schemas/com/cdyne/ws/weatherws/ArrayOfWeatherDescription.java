@@ -57,7 +57,7 @@ public class ArrayOfWeatherDescription {
      * Objects of the following type(s) are allowed in the list
      * {@link WeatherDescription }
      * 
-     * 
+     * @return weather descriptions
      */
     public List<WeatherDescription> getWeatherDescription() {
         if (weatherDescription == null) {
