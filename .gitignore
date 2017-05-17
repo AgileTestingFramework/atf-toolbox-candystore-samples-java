@@ -1,6 +1,9 @@
 */**/target/
 */**/test-results
+*/**/test-output
 */**/.project
 */**/.classpath
 */**/.settings
 /.project
+*/**/bin/
+.settings
