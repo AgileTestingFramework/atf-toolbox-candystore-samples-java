@@ -20,7 +20,7 @@ public class AutomationPracticePageFactory {
 	
 	private AutomationPracticePageFactory(){}
 	
-	private static synchronized LoadableComponent getInstance(String pageObjectType){
+	public static synchronized LoadableComponent getInstance(String pageObjectType){
 		
         // Our "per key" singleton
         LoadableComponent instance = instances.get(pageObjectType);
