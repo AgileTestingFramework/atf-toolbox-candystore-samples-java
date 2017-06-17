@@ -55,4 +55,34 @@ public class IndexPage extends LoadableComponent<IndexPage>{
 		}
 		return false;
 	}
+	
+	public boolean topSaleImageIsDisplayed()
+	{
+		try { return topSaleImage.isDisplayed(); }
+		catch (StaleElementReferenceException | NoSuchElementException ex)
+		{
+			Fail.fail("IndexPage.TopSaleImage", ex);
+		}
+		return false;
+	}
+	
+	public boolean contactUsLinkIsDisplayed()
+	{
+		try { contactUsLink.isDisplayed(); }
+		catch (StaleElementReferenceException | NoSuchElementException ex)
+		{
+			Fail.fail("IndexPage,ContactUsLink", ex);
+		}
+		return false;
+	}
+	
+	public void clickContactUsLink()
+	{
+		try { contactUsLink.click(); }
+		catch (StaleElementReferenceException | NoSuchElementException ex)
+		{
+			Fail.fail("IndexPage.ContactUsLink", ex);
+		}
+	}
+	
 }
