@@ -32,6 +32,9 @@ public class IndexPage extends LoadableComponent<IndexPage>{
 	@FindBy(xpath = "//*[@id='header_logo']/a/img")
 	private WebElement yourLogo;
 	
+	@FindBy(css = "#price-percent-reduction")
+	private WebElement discountPrice;
+	
 	@Override
 	public void load(){
 		ATFHandler.getInstance().getWebAutomation().getWebDriver().get(ConfigurationManager.getInstance().getWebBaseUrl());
@@ -82,6 +85,14 @@ public class IndexPage extends LoadableComponent<IndexPage>{
 		catch (StaleElementReferenceException | NoSuchElementException ex)
 		{
 			Fail.fail("IndexPage.ContactUsLink", ex);
+		}
+	}
+	
+	private void discountPriceText(){
+		try{ discountPrice.getText(); }
+		catch (StaleElementReferenceException | NoSuchElementException ex)
+		{
+			Fail.fail("IndexPage.DiscountPriceText", ex);
 		}
 	}
 	
