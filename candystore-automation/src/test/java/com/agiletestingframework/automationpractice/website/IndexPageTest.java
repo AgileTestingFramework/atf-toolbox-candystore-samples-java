@@ -18,5 +18,16 @@ public class IndexPageTest {
 		indexPage.load();
 	}
 	
+	/**
+	 * Validate the expected image appears on the page
+	 */
+	@Test(groups = { "smoke" })
+	public void topSaleImageIsDisplayed(){
+		assertThat(indexPage.topSaleImageIsDisplayed()).isTrue();
+	}
 	
+	@Test
+	public void contactUsLinkIsDsiplayed(){
+		assertThat(indexPage.contactUsLinkIsDisplayed()).isTrue();
+	}
 }
