@@ -3,7 +3,7 @@ package com.agiletestingframework.automationpractice.website;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.agiletestingframework.candystore.website.pageobjects.ContactUsPage;
+import com.agiletestingframework.automationpractice.website.pageobjects.ContactUsPage;
 import com.agiletestingframework.automationpractice.website.pageobjects.IndexPage;
 import com.agiletestingframework.toolbox.ATFHandler;
 
