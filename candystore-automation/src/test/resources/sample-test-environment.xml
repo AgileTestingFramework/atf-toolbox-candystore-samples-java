@@ -10,7 +10,7 @@
 		<desired-capabilities>
 			<browser-name>chrome</browser-name>
 <!-- 			<browser-version>45.0.2</browser-version> -->
-			<browser-download-path>/Users/kylemcadams/drivers/chromedriver</browser-download-path>
+			<browser-download-path>/file/path/to/chromedriver</browser-download-path>
 			<platform></platform>
 			<takes-screenshot>true</takes-screenshot>
 			<handles-alerts></handles-alerts>
@@ -82,7 +82,7 @@
 				<profile-dir-and-filename></profile-dir-and-filename>
 				<logging-prefs></logging-prefs>
 				<binary></binary>
-				<gecko-driver-path>/Users/kylemcadams/drivers/geckodriver</gecko-driver-path>
+				<gecko-driver-path>/file/path/to/geckodriver</gecko-driver-path>
 				<rc-mode></rc-mode>
 				<rc-capture-network-traffic></rc-capture-network-traffic>
 				<rc-add-custom-request-header></rc-add-custom-request-header>
