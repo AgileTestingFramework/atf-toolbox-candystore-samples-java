@@ -4,13 +4,13 @@
 <sample-test-environment>
 	<atf>
 		<web>
-			<base-url>http://automationpractice.com/</base-url>
+			<base-url>http://automationpractice.com</base-url>
 		</web>
 
 		<desired-capabilities>
-			<browser-name>firefox</browser-name>
-			<browser-version>45.0.2</browser-version>
-			<browser-download-path>/Users/kylemcadams/drivers/Firefox-45.0.2.app/Contents/MacOS/firefox</browser-download-path>
+			<browser-name>chrome</browser-name>
+<!-- 			<browser-version>45.0.2</browser-version> -->
+			<browser-download-path>/Users/kylemcadams/drivers/chromedriver</browser-download-path>
 			<platform></platform>
 			<takes-screenshot>true</takes-screenshot>
 			<handles-alerts></handles-alerts>
@@ -25,7 +25,7 @@
 			<rotatable></rotatable>
 			<native-events></native-events>
 			<proxy></proxy>
-			<unexpected-alert-behavior></unexpected-alert-behavior>
+			<unexpected-alert-behavior>ignore</unexpected-alert-behavior>
 			<element-scroll-behavior></element-scroll-behavior>
 
 			<json-proxy-type></json-proxy-type>
@@ -72,7 +72,7 @@
 			<chrome>
 				<proxy></proxy>
 				<chrome-options>
-					<args></args>
+					<args>--start-maximized</args>
 					<binary></binary>
 					<extentions></extentions>
 				</chrome-options>
@@ -82,6 +82,7 @@
 				<profile-dir-and-filename></profile-dir-and-filename>
 				<logging-prefs></logging-prefs>
 				<binary></binary>
+				<gecko-driver-path>/Users/kylemcadams/drivers/geckodriver</gecko-driver-path>
 				<rc-mode></rc-mode>
 				<rc-capture-network-traffic></rc-capture-network-traffic>
 				<rc-add-custom-request-header></rc-add-custom-request-header>
