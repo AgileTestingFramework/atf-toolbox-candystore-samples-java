@@ -2,6 +2,9 @@ package com.agiletestingframework.automationpractice.website;
 
 import com.agiletestingframework.automationpractice.website.AutomationPracticePageFactory;
 import com.agiletestingframework.automationpractice.website.pageobjects.IndexPage;
+import com.agiletestingframework.toolbox.ATFHandler;
+
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -16,6 +19,11 @@ public class IndexPageTest {
 	{
 		indexPage = (IndexPage)AutomationPracticePageFactory.getInstance(AutomationPracticePageFactory.INDEX);
 		indexPage.load();
+	}
+	
+	@AfterClass
+	public void ClassTeardown() {
+		ATFHandler.getInstance().teardown();
 	}
 	
 	/**
