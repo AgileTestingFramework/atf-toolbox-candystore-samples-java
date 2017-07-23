@@ -23,7 +23,7 @@ public class IndexPage extends LoadableComponent<IndexPage>{
 	@FindBy(className = "img-responsive")
 	private WebElement topSaleImage;
 	
-	@FindBy(linkText = "ContactUs")
+	@FindBy(linkText = "Contact us")
 	private WebElement contactUsLink;
 	
 	@FindBy(css = "#block_top_menu > ul > li:nth-child:contains('Women')")
@@ -71,10 +71,10 @@ public class IndexPage extends LoadableComponent<IndexPage>{
 	
 	public boolean contactUsLinkIsDisplayed()
 	{
-		try { contactUsLink.isDisplayed(); }
+		try { return contactUsLink.isDisplayed(); }
 		catch (StaleElementReferenceException | NoSuchElementException ex)
 		{
-			Fail.fail("IndexPage,ContactUsLink", ex);
+			Fail.fail("IndexPage.ContactUsLink", ex);
 		}
 		return false;
 	}
