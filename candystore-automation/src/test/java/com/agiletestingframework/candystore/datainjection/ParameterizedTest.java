@@ -3,7 +3,7 @@ package com.agiletestingframework.candystore.datainjection;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import static org.fest.assertions.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class ParameterizedTest {
 

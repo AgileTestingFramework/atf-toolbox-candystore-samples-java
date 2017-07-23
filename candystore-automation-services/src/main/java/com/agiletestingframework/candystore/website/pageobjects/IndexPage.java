@@ -2,7 +2,7 @@ package com.agiletestingframework.candystore.website.pageobjects;
 
 import com.agiletestingframework.toolbox.ATFHandler;
 import com.agiletestingframework.toolbox.managers.ConfigurationManager;
-import org.fest.assertions.api.Fail;
+import org.assertj.core.api.Fail;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
