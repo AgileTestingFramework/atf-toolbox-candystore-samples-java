@@ -10,7 +10,7 @@ import com.agiletestingframework.automationpractice.website.AutomationPracticePa
 import com.agiletestingframework.toolbox.ATFHandler;
 
 public class ContactUsPage  extends LoadableComponent<ContactUsPage>{
-	private WebDriver wd;
+	private WebDriver webdriver;
 
 	@FindBy(id = "id_contact")
 	WebElement subjectHeadingDrpDwn;
@@ -32,7 +32,7 @@ public class ContactUsPage  extends LoadableComponent<ContactUsPage>{
 		((IndexPage)AutomationPracticePageFactory.getInstance(AutomationPracticePageFactory.INDEX)).load();
 		((IndexPage)AutomationPracticePageFactory.getInstance(AutomationPracticePageFactory.INDEX)).clickContactUsLink();
 		isLoaded();
-		wd = ATFHandler.getInstance().getWebAutomation().getWebDriver();
+		webdriver = ATFHandler.getInstance().getWebAutomation().getWebDriver();
 	}
 	
 	@Override
@@ -77,7 +77,7 @@ public class ContactUsPage  extends LoadableComponent<ContactUsPage>{
 	
 	public boolean checkIfValidEmail(){
 		boolean valid = false;
-		if(wd.findElements(By.cssSelector("p.form-group.form-ok")).size() > 0 )
+		if(webdriver.findElements(By.cssSelector("p.form-group.form-ok")).size() > 0 )
 		{
 			valid = true;
 		}
