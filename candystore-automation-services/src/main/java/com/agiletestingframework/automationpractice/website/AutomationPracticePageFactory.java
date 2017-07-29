@@ -3,6 +3,7 @@ package com.agiletestingframework.automationpractice.website;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.agiletestingframework.automationpractice.website.pageobjects.AccountCreationPage;
 import com.agiletestingframework.automationpractice.website.pageobjects.ContactUsPage;
 import com.agiletestingframework.automationpractice.website.pageobjects.IndexPage;
 import com.agiletestingframework.automationpractice.website.pageobjects.SignInPage;
@@ -19,6 +20,7 @@ public class AutomationPracticePageFactory {
 	public static final String INDEX = "index";
 	public static final String CONTACTUS = "contactUs";
 	public static final String SIGNIN = "signIn";
+	public static final String ACCOUNTCREATION = "accountCreation";
 	
 	private AutomationPracticePageFactory(){}
 	
@@ -38,6 +40,9 @@ public class AutomationPracticePageFactory {
 				break;
 			case SIGNIN:
 				instance = new SignInPage();
+				break;
+			case ACCOUNTCREATION:
+				instance = new AccountCreationPage();
 				break;
 			default:
 				instance = new IndexPage();
