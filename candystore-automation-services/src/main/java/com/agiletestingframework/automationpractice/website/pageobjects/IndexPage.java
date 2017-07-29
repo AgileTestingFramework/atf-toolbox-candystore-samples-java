@@ -26,6 +26,9 @@ public class IndexPage extends LoadableComponent<IndexPage>{
 	@FindBy(linkText = "Contact us")
 	private WebElement contactUsLink;
 	
+	@FindBy(linkText = "Sign in")
+	private WebElement signInLink;
+	
 	@FindBy(css = "#block_top_menu > ul > li:nth-child:contains('Women')")
 	private WebElement womenTab;
 	
@@ -85,6 +88,14 @@ public class IndexPage extends LoadableComponent<IndexPage>{
 		catch (StaleElementReferenceException | NoSuchElementException ex)
 		{
 			Fail.fail("IndexPage.ContactUsLink", ex);
+		}
+	}
+	
+	public void clickSignInLink(){
+		try { signInLink.click(); }
+		catch (StaleElementReferenceException | NoSuchElementException ex)
+		{
+			Fail.fail("IndexPage.SignInLink", ex);
 		}
 	}
 	

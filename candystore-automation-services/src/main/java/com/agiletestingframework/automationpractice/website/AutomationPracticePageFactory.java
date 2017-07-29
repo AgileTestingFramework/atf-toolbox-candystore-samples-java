@@ -5,6 +5,7 @@ import java.util.Map;
 
 import com.agiletestingframework.automationpractice.website.pageobjects.ContactUsPage;
 import com.agiletestingframework.automationpractice.website.pageobjects.IndexPage;
+import com.agiletestingframework.automationpractice.website.pageobjects.SignInPage;
 import com.agiletestingframework.toolbox.ATFHandler;
 
 import org.openqa.selenium.support.PageFactory;
@@ -17,6 +18,7 @@ public class AutomationPracticePageFactory {
     /** Create all page object constants here for easy access **/
 	public static final String INDEX = "index";
 	public static final String CONTACTUS = "contactUs";
+	public static final String SIGNIN = "signIn";
 	
 	private AutomationPracticePageFactory(){}
 	
@@ -27,10 +29,19 @@ public class AutomationPracticePageFactory {
         
         if (instance == null) {
             // Lazily create instance
-			if (pageObjectType == INDEX) {
+			switch (pageObjectType){
+			case INDEX:
 				instance = new IndexPage();
-			} else if (pageObjectType == CONTACTUS) {
+				break;
+			case CONTACTUS:
 				instance = new ContactUsPage();
+				break;
+			case SIGNIN:
+				instance = new SignInPage();
+				break;
+			default:
+				instance = new IndexPage();
+				break;
 			}
 
 			// Add it to map
