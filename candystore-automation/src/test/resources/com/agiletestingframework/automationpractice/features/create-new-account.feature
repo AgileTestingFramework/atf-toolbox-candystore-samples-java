@@ -1,3 +1,4 @@
+@create-account
 Feature: Create Account
 
 	Scenario: navigate to create account
