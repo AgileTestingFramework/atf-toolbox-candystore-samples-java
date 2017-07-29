@@ -4,7 +4,7 @@
 
 	<groupId>com.agiletestingframework</groupId>
 	<artifactId>atf-candystore-samples</artifactId>
-	<version>5.0.3-SNAPSHOT</version>
+	<version>5.0.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Agile Testing Framework Candystore Samples</name>
