@@ -1,47 +1,47 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>com.agiletestingframework</groupId>
-        <artifactId>atf-candystore-samples</artifactId>
-        <version>5.0.4-SNAPSHOT</version>
-    </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.agiletestingframework</groupId>
+    <artifactId>atf-candystore-samples</artifactId>
+    <version>5.0.4-SNAPSHOT</version>
+  </parent>
 
-    <artifactId>candystore-automation</artifactId>
-	<name>Candystore sample tests</name>
-	<description>Examples of different types of tests.</description>
-	<url>https://github.com/AgileTestingFramework/atf-toolbox-candystore-samples-java</url>
+  <artifactId>candystore-automation</artifactId>
+  <name>Candystore sample tests</name>
+  <description>Examples of different types of tests.</description>
+  <url>https://github.com/AgileTestingFramework/atf-toolbox-candystore-samples-java</url>
 
-	<licenses>
-		<license>
-			<name>The Apache Software License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.agiletestingframework</groupId>
-            <artifactId>candystore-automation-services</artifactId>
-            <version>${pom.version}</version>
-        </dependency>
-    </dependencies>
+  <dependencies>
+    <dependency>
+      <groupId>com.agiletestingframework</groupId>
+      <artifactId>candystore-automation-services</artifactId>
+      <version>${pom.version}</version>
+    </dependency>
+  </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>2.6</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>test-jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.6</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>test-jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
