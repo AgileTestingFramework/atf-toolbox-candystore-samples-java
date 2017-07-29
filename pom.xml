@@ -59,7 +59,7 @@
   </distributionManagement>
 
   <properties>
-    <java.version>7</java.version>
+    <java.version>8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <atf-toolbox.version>5.1.2</atf-toolbox.version>
   </properties>
@@ -168,10 +168,7 @@
                   <goal>jar</goal>
                 </goals>
                 <configuration>
-                  <!--
-                    Had issues with generated code in
-                    com.agiletestingframework.candystore.webservices.schemas.com.cdyne.ws.weatherws
-                  -->
+                  <!-- Had issues with generated code in com.agiletestingframework.candystore.webservices.schemas.com.cdyne.ws.weatherws -->
                   <additionalparam>-Xdoclint:none</additionalparam>
                 </configuration>
               </execution>
