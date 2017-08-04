@@ -1,4 +1,4 @@
-package com.agiletestingframework.automationpractice.stepDefinitions;
+package com.agiletestingframework.automationpractice.stepdefinitions;
 
 import java.io.IOException;
 

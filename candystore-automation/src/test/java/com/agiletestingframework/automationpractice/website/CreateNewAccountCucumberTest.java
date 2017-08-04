@@ -15,7 +15,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 
 @CucumberOptions(features = "src/test/resources/com/agiletestingframework/automationpractice/features/create-new-account.feature", 
 tags = {"@create-account"},
-glue= {"com.agiletestingframework.automationpractice.stepDefinitions"})
+glue= {"com.agiletestingframework.automationpractice.stepdefinitions"})
 public class CreateNewAccountCucumberTest {
     private TestNGCucumberRunner testNGCucumberRunner;
     private SignInPage signInPage;
