@@ -1,4 +1,4 @@
-package com.agiletestingframework.automationpractice.stepDefinitions;
+package com.agiletestingframework.automationpractice.stepdefinitions;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
